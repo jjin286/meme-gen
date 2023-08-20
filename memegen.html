@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeGen</title>
+  <link rel="stylesheet" href="memegen.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Create a Meme!</h1>
+      <h3>Add your own image and text to generate your own meme collection!</h3>
+    </div>
+    <form class="form">
+      <div class="top">
+        <label for="top-text">Top Text </label>
+        <br>
+        <input type="text" id="top-text" maxlength="100" onchange="changePreview">
+      </div>
+      <div class="img">
+        <label for="img-src">Image Link </label>
+        <br>
+        <input type="text" id="img-src">
+      </div>
+      <div class="bot">
+        <label for="bottom-text">Bottom Text </label>
+        <br>
+        <input type="text" id="bottom-text" maxlength="100">
+      </div>
+      <button type="submit">Generate Meme</button>
+    </form>
+    <div class="preview">
+      <img class="preview-img" src="https://www.peacemakersnetwork.org/wp-content/uploads/2019/09/placeholder.jpg" onerror="this.src='https://www.peacemakersnetwork.org/wp-content/uploads/2019/09/placeholder.jpg';">
+      <div class="preview-text">
+        <p id="top-preview">TOP TEXT</p>
+        <p id="bot-preview">BOTTOM TEXT</p>
+      </div>
+    </div>
+    <div class="result">
+
+    </div>
+  </div>
+  <script src="memegen.js"></script>
+</body>
+</html>
+<!-- 12am  5am-->
